@@ -1,3 +1,5 @@
+import sys
+
 def is_divisible_by(number, divisor):
      return number % divisor == 0
 
@@ -10,3 +12,7 @@ def says(number):
         return "buzz"
     else:
         return number
+
+args = sys.argv[1:]
+for a in args:
+    print(says(int(a)))
